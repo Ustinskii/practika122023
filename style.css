@@ -1,0 +1,85 @@
+header {
+    height: 100vh;
+    background: greenyellow;
+}
+
+nav {
+    background: gray;
+    height: 50px;
+    width: 90%;
+}
+
+main {
+    margin: 10px 250px;
+}
+
+.container {
+    min-height: 200px;
+    border: 2px solid black;
+    display: grid;
+    margin-top: 80px;
+}
+
+.why {
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 14px;
+}
+
+.why .block {
+    height: 90px;
+    border: 1px solid #a8a8a8;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.material {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.material .block {
+    height: 524px;
+    border: 1px solid #a8a8a8;
+    border-radius: 8px;
+}
+
+.about {
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.about .block {
+    height: 446px;
+    border: 1px solid #a8a8a8;
+
+}
+
+.faq {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.faq .block {
+    height: 588px;
+    border: 1px solid #a8a8a8;
+}
+
+.delivery {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 0;
+    margin-bottom: 80px;
+}
+
+.delivery .block {
+    height: 980px;
+    border: 1px solid #a8a8a8;
+}
+
+footer {
+    height: 128px;
+    background: #424141;
+}
+
+.foot-nav {
+    margin: 23px 250px;
+    height: 82px;
+    border: 1px solid white;
+}
