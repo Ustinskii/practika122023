@@ -1,20 +1,95 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+h3{
+ font-family: Rubik;
+font-size: 42px;
+font-weight: 500;
+line-height: 50px;
+letter-spacing: 0em;
+text-align: left;
+color: #000000;
+}
+li{
+    list-style: none;
+}
 header {
-    height: 100vh;
-    background: greenyellow;
+    height: 80vh;
+    padding-top: 30px;
+    background: url(./img/pg.png) no-repeat right top;
+    background-size: cover;
 }
 
 nav {
-    background: gray;
-    height: 50px;
-    width: 90%;
+    padding-left:250px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
 }
+nav .logo{
+    height: 82px;
+    margin-right: 91px;
+}
+.menu{
+    display: flex;
+}
+.menu-item{
+    margin: 0 24px;
+    padding: 10px;
+}
+.banner{
+width: 775px;
+height: 382px;
+margin-top: 320px;
+margin-left: 250px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.banner-title{
+ font-family: Rubik;
+font-size: 60px;
+font-weight: 700;
+line-height: 71px;
+letter-spacing: 0em;
+text-align: left;
+color: #ffffff;
+}
+.banner-text{   
+font-family: Rubik;
+font-size: 20px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+color: #ffffff;
+}
+.callback{
+width: 254px;
+height: 66px;
+border-radius: 8px;
+background:  #27AE60;
+border: none;
+font-family: Rubik;
+font-size: 22px;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0em;
+text-align: left;
+color: #ffffff;
+text-align: center;
+}
+
+
+
+
 
 main {
     margin: 10px 250px;
 }
 
 .container {
-    min-height: 200px;
     border: 2px solid black;
     display: grid;
     margin-top: 80px;
@@ -26,10 +101,27 @@ main {
 }
 
 .why .block {
-    height: 90px;
     border: 1px solid #a8a8a8;
     background-color: #ffffff;
     border-radius: 8px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.why .block .icon{
+    height: 32px;
+    width: 32px;
+    margin-right: 20px;
+}
+.why .block .text{
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+
 }
 
 .material {
