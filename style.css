@@ -127,24 +127,93 @@ text-align: left;
 .material {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
+    vertical-align: bottom;
 }
 
 .material .block {
     height: 524px;
     border: 1px solid #a8a8a8;
     border-radius: 8px;
-}
+    font-family: Rubik;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: left;
+    color: #ffffff;
+    padding: 40px ;display: flex;
 
+}
+.material .block:hover{
+    cursor: pointer;
+}
+.pecok{
+    background: url(./img/Rectangle\ 10.png) no-repeat center center;
+    background-size: cover;
+}
+.sheben{
+    background: url(./img/rectangle-11.png) no-repeat center center;
+    background-size: cover;
+}
+.kroshka{
+    background: url(./img/Rectangle\ 707.png) no-repeat center center;
+    background-size: cover;
+}
+.arenda{
+    background: url(./img/Rectangle\ 13.png) no-repeat center center;
+    background-size: cover;
+}
 .about {
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns:1fr 1fr;
 }
 
 .about .block {
     height: 446px;
     border: 1px solid #a8a8a8;
-
+}
+.about-text{
+font-family: Rubik;
+font-size: 18px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0.005em;
+text-align: left;
+width: 30vw;
 }
 
+.have{
+background-color: #f8f8f8;
+border-radius:24px;
+display: grid;
+grid-template-columns:1fr 1fr;
+}
+.miniblock{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.caunt{
+    font-family: Rubik;
+font-size: 88px;
+font-weight: 300;
+color: #1D1D1B;
+display: flex;
+vertical-align: top;
+}
+.plus{
+    font-family: Rubik;
+font-size: 40px;
+font-weight: 500;
+color:#27AE60;
+}
+.have-text{
+    font-family: Rubik;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.005em;
+    text-align: left;
+    color: #67675F;
+    }
 .faq {
     grid-template-columns: repeat(2, 1fr);
 }
