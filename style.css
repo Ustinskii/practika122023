@@ -1,3 +1,4 @@
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
 a{
     text-decoration: none;
     color: black;
@@ -9,13 +10,13 @@ font-weight: 500;
 line-height: 50px;
 letter-spacing: 0em;
 text-align: left;
-color: #000000;
+color:#1E1E1C;
 }
 li{
     list-style: none;
 }
 header {
-    height: 80vh;
+    height: 100vh;
     padding-top: 30px;
     background: url(./img/pg.png) no-repeat right top;
     background-size: cover;
@@ -216,13 +217,87 @@ color:#27AE60;
     }
 .faq {
     grid-template-columns: repeat(2, 1fr);
+    background: #F8F8F8;
+    margin: 0 -250px;
+    padding: 0 250px;
 }
 
-.faq .block {
+/* .faq .block {
     height: 588px;
     border: 1px solid #a8a8a8;
+} */
+.faq .left{
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.faq-black{
+font-family: Rubik;
+font-size: 22px;
+font-weight: 300;
+line-height: 31px;
+letter-spacing: 0em;
+text-align: left;
+color: #1E1E1C;
+margin-bottom: 53px;
+}
+.faq-green{
+font-family: Rubik;
+font-size: 28px;
+font-weight: 400;
+line-height: 39px;
+letter-spacing: 0em;
+text-align: left;
+color:#27AE60;
+margin-top: 23px;
+margin-bottom: 23px;
 }
 
+.brod{
+    height: 57px;
+    width: 318px;
+    background: #27AE60;
+    margin: auto;
+}
+.faq-form{
+    border-radius: 12px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 45px 45px 30px 45px;
+    font-family: Rubik;
+font-size: 18px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left;
+color: #181A28;
+/* margin-right: 250px; */
+}
+.faq-form input{
+    padding: 23px 30px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+.faq-form textarea{
+    padding: 23px 30px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+.form-text{
+    font-family: Rubik;
+font-size: 15px;
+font-weight: 400;
+line-height: 15px;
+letter-spacing: 0em;
+text-align: left;
+color: #181A28;
+margin-top: 23px;
+margin-bottom: -15px;
+}
 .delivery {
     grid-template-columns: repeat(2, 1fr);
     margin-top: 0;
