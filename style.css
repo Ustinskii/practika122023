@@ -1,321 +1,461 @@
   @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
-a{
-    text-decoration: none;
-    color: black;
-}
-h3{
- font-family: Rubik;
-font-size: 42px;
-font-weight: 500;
-line-height: 50px;
-letter-spacing: 0em;
-text-align: left;
-color:#1E1E1C;
-}
-li{
-    list-style: none;
-}
-header {
-    height: 100vh;
-    padding-top: 30px;
-    background: url(./img/pg.png) no-repeat right top;
-    background-size: cover;
-}
 
-nav {
-    padding-left:250px;
-    margin-top: 30px;
+  * {
+    margin: 0;
+  }
+  a {
+      text-decoration: none;
+      color: black;
+  }
+
+  h3 {
+      font-family: Rubik;
+      font-size: 42px;
+      font-weight: 500;
+      line-height: 50px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #1E1E1C;
+  }
+
+  li {
+      list-style: none;
+  }
+
+  header {
+      height: 100vh;
+      padding-top: 30px;
+      background: url(./img/pg.png) no-repeat right top;
+      background-size: cover;
+  }
+
+  nav {
+      padding-left: 250px;
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+  }
+
+  nav .logo {
+      height: 82px;
+      margin-right: 91px;
+  }
+
+  .menu {
+      display: flex;
+  }
+
+  .menu-item {
+      margin: 0 24px;
+      padding: 10px;
+  }
+
+  .banner {
+      width: 775px;
+      height: 382px;
+      margin-top: 320px;
+      margin-left: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
+  .banner-title {
+      font-family: Rubik;
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 71px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #ffffff;
+  }
+
+  .banner-text {
+      font-family: Rubik;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #ffffff;
+  }
+
+  .callback {
+      width: 254px;
+      height: 66px;
+      border-radius: 8px;
+      background: #27AE60;
+      border: none;
+      font-family: Rubik;
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 26px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #ffffff;
+      text-align: center;
+  }
+
+
+
+
+
+  main {
+      margin: 10px 250px;
+  }
+
+  .container {
+      display: grid;
+      margin-top: 80px;
+  }
+
+  .why {
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 14px;
+  }
+
+  .why .block {
+      border: 1px solid #a8a8a8;
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 25px;
+      display: flex;
+      align-items: center;
+  }
+
+  .why .block .icon {
+      height: 32px;
+      width: 32px;
+      margin-right: 20px;
+  }
+
+  .why .block .text {
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
+
+  }
+
+  .material {
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+      vertical-align: bottom;
+  }
+
+  .material .block {
+      height: 524px;
+      border: 1px solid #a8a8a8;
+      border-radius: 8px;
+      font-family: Rubik;
+      font-size: 40px;
+      font-weight: 700;
+      text-align: left;
+      color: #ffffff;
+      padding: 40px;
+      display: flex;
+
+  }
+
+  .material .block:hover {
+      cursor: pointer;
+  }
+
+  .pecok {
+      background: url(./img/Rectangle\ 10.png) no-repeat center center;
+      background-size: cover;
+  }
+
+  .sheben {
+      background: url(./img/rectangle-11.png) no-repeat center center;
+      background-size: cover;
+  }
+
+  .kroshka {
+      background: url(./img/Rectangle\ 707.png) no-repeat center center;
+      background-size: cover;
+  }
+
+  .arenda {
+      background: url(./img/Rectangle\ 13.png) no-repeat center center;
+      background-size: cover;
+  }
+
+  .about {
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .about-text {
+      font-family: Rubik;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0.005em;
+      text-align: left;
+      width: 30vw;
+  }
+
+  .have {
+      background-color: #f8f8f8;
+      border-radius: 24px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .miniblock {
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .caunt {
+      font-family: Rubik;
+      font-size: 88px;
+      font-weight: 300;
+      color: #1D1D1B;
+      display: flex;
+      vertical-align: top;
+  }
+
+  .plus {
+      font-family: Rubik;
+      font-size: 40px;
+      font-weight: 500;
+      color: #27AE60;
+  }
+
+  .have-text {
+      font-family: Rubik;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 34px;
+      letter-spacing: 0.005em;
+      text-align: left;
+      color: #67675F;
+  }
+
+  .faq {
+      grid-template-columns: repeat(2, 1fr);
+      background: #F8F8F8;
+      margin: 0 -250px;
+      padding: 0 250px;
+  }
+
+  .faq .left {
+      width: 25vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  .faq-black {
+      font-family: Rubik;
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 31px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #1E1E1C;
+      margin-bottom: 53px;
+  }
+
+  .faq-green {
+      font-family: Rubik;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 39px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #27AE60;
+      margin-top: 23px;
+      margin-bottom: 23px;
+  }
+
+  .brod {
+      height: 57px;
+      width: 318px;
+      background: #27AE60;
+      margin: auto;
+  }
+
+  .faq-form {
+      border-radius: 12px;
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      padding: 45px 45px 30px 45px;
+      font-family: Rubik;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #181A28;
+      /* margin-right: 250px; */
+  }
+
+  .faq-form input {
+      padding: 23px 30px;
+      border: 1px solid #dddddd;
+      border-radius: 6px;
+      margin-bottom: 20px;
+  }
+
+  .faq-form textarea {
+      padding: 23px 30px;
+      border: 1px solid #dddddd;
+      border-radius: 6px;
+      margin-bottom: 20px;
+  }
+
+  .form-text {
+      font-family: Rubik;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 15px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #181A28;
+      margin-top: 23px;
+      margin-bottom: -15px;
+  }
+
+  .delivery {
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 0;
+      margin-bottom: 80px;
+  }
+
+  .delivery .block {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .delivery .block p {
+      font-family: Rubik;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 28px;
+      text-align: left;
+      width: 30vw;
+      margin-top: 30px;
+      margin-bottom: 36px;
+  }
+
+  .star-text {
+      margin-bottom: 58px;
+  }
+
+  .star-text span {
+      font-family: Rubik;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #1E1E1C;
+  }
+
+  .dev-contact {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+      margin-bottom: 0;
+      margin-top: auto;
+  }
+
+  .dev-block {
+      height: 200px;
+      background: #F8F8F8;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .dev-text1 {
+      font-family: Rubik;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 18px;
+      color: #393838;
+      margin-bottom: 26px;
+  }
+
+  .dev-text2 {
+      font-family: Rubik;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #848692;
+  }
+
+  .dev-map {
+      aspect-ratio: 1;
+      background: url(./img/map.png) no-repeat center center;
+      background-size: cover;
+      margin-right: -250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .krug {
+      background: #28ae6020;
+      width: 75%;
+      border-radius: 50%;
+      aspect-ratio: 1;
+  }
+
+  footer {
+      background: #424141;
+      padding: 23px 250px;
+  }
+
+  .foot-nav {
+      height: 82px;
+      display: flex;
+      align-items: center;
+  }
+
+  .policis {
+      font-family: Gilroy;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14px;
+      color: #ffffff;
+      margin-left: 50px;
+      margin-right: 134px;
+  }
+
+  .foot-menu {
+      color: #ffffff;
+      margin-left: 50px;
+      font-family: Gilroy;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: left;
+
+  }
+.socials{
+    margin-left: auto;
     display: flex;
-    align-items: center;
+    gap: 25px;
 }
-nav .logo{
-    height: 82px;
-    margin-right: 91px;
-}
-.menu{
-    display: flex;
-}
-.menu-item{
-    margin: 0 24px;
-    padding: 10px;
-}
-.banner{
-width: 775px;
-height: 382px;
-margin-top: 320px;
-margin-left: 250px;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-}
-.banner-title{
- font-family: Rubik;
-font-size: 60px;
-font-weight: 700;
-line-height: 71px;
-letter-spacing: 0em;
-text-align: left;
-color: #ffffff;
-}
-.banner-text{   
-font-family: Rubik;
-font-size: 20px;
-font-weight: 400;
-line-height: 28px;
-letter-spacing: 0em;
-text-align: left;
-color: #ffffff;
-}
-.callback{
-width: 254px;
-height: 66px;
-border-radius: 8px;
-background:  #27AE60;
-border: none;
-font-family: Rubik;
-font-size: 22px;
-font-weight: 500;
-line-height: 26px;
-letter-spacing: 0em;
-text-align: left;
-color: #ffffff;
-text-align: center;
-}
-
-
-
-
-
-main {
-    margin: 10px 250px;
-}
-
-.container {
-    border: 2px solid black;
-    display: grid;
-    margin-top: 80px;
-}
-
-.why {
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 14px;
-}
-
-.why .block {
-    border: 1px solid #a8a8a8;
-    background-color: #ffffff;
-    border-radius: 8px;
-    padding: 25px;
-    display: flex;
-    align-items: center;
-}
-
-.why .block .icon{
-    height: 32px;
-    width: 32px;
-    margin-right: 20px;
-}
-.why .block .text{
-font-family: Montserrat;
-font-size: 14px;
-font-weight: 500;
-line-height: 20px;
-letter-spacing: 0em;
-text-align: left;
-
-}
-
-.material {
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-    vertical-align: bottom;
-}
-
-.material .block {
-    height: 524px;
-    border: 1px solid #a8a8a8;
-    border-radius: 8px;
-    font-family: Rubik;
-    font-size: 40px;
-    font-weight: 700;
-    text-align: left;
-    color: #ffffff;
-    padding: 40px ;display: flex;
-
-}
-.material .block:hover{
-    cursor: pointer;
-}
-.pecok{
-    background: url(./img/Rectangle\ 10.png) no-repeat center center;
-    background-size: cover;
-}
-.sheben{
-    background: url(./img/rectangle-11.png) no-repeat center center;
-    background-size: cover;
-}
-.kroshka{
-    background: url(./img/Rectangle\ 707.png) no-repeat center center;
-    background-size: cover;
-}
-.arenda{
-    background: url(./img/Rectangle\ 13.png) no-repeat center center;
-    background-size: cover;
-}
-.about {
-    grid-template-columns:1fr 1fr;
-}
-
-.about .block {
-    height: 446px;
-    border: 1px solid #a8a8a8;
-}
-.about-text{
-font-family: Rubik;
-font-size: 18px;
-font-weight: 400;
-line-height: 26px;
-letter-spacing: 0.005em;
-text-align: left;
-width: 30vw;
-}
-
-.have{
-background-color: #f8f8f8;
-border-radius:24px;
-display: grid;
-grid-template-columns:1fr 1fr;
-}
-.miniblock{
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.caunt{
-    font-family: Rubik;
-font-size: 88px;
-font-weight: 300;
-color: #1D1D1B;
-display: flex;
-vertical-align: top;
-}
-.plus{
-    font-family: Rubik;
-font-size: 40px;
-font-weight: 500;
-color:#27AE60;
-}
-.have-text{
-    font-family: Rubik;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 34px;
-    letter-spacing: 0.005em;
-    text-align: left;
-    color: #67675F;
-    }
-.faq {
-    grid-template-columns: repeat(2, 1fr);
-    background: #F8F8F8;
-    margin: 0 -250px;
-    padding: 0 250px;
-}
-
-/* .faq .block {
-    height: 588px;
-    border: 1px solid #a8a8a8;
-} */
-.faq .left{
-    width: 25vw;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-}
-.faq-black{
-font-family: Rubik;
-font-size: 22px;
-font-weight: 300;
-line-height: 31px;
-letter-spacing: 0em;
-text-align: left;
-color: #1E1E1C;
-margin-bottom: 53px;
-}
-.faq-green{
-font-family: Rubik;
-font-size: 28px;
-font-weight: 400;
-line-height: 39px;
-letter-spacing: 0em;
-text-align: left;
-color:#27AE60;
-margin-top: 23px;
-margin-bottom: 23px;
-}
-
-.brod{
-    height: 57px;
-    width: 318px;
-    background: #27AE60;
-    margin: auto;
-}
-.faq-form{
-    border-radius: 12px;
-    background: #ffffff;
-    display: flex;
-    flex-direction: column;
-    padding: 45px 45px 30px 45px;
-    font-family: Rubik;
-font-size: 18px;
-font-weight: 400;
-line-height: 18px;
-letter-spacing: 0em;
-text-align: left;
-color: #181A28;
-/* margin-right: 250px; */
-}
-.faq-form input{
-    padding: 23px 30px;
-    border: 1px solid #dddddd;
-    border-radius: 6px;
-    margin-bottom: 20px;
-}
-.faq-form textarea{
-    padding: 23px 30px;
-    border: 1px solid #dddddd;
-    border-radius: 6px;
-    margin-bottom: 20px;
-}
-.form-text{
-    font-family: Rubik;
-font-size: 15px;
-font-weight: 400;
-line-height: 15px;
-letter-spacing: 0em;
-text-align: left;
-color: #181A28;
-margin-top: 23px;
-margin-bottom: -15px;
-}
-.delivery {
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 0;
-    margin-bottom: 80px;
-}
-
-.delivery .block {
-    height: 980px;
-    border: 1px solid #a8a8a8;
-}
-
-footer {
-    height: 128px;
-    background: #424141;
-}
-
-.foot-nav {
-    margin: 23px 250px;
-    height: 82px;
-    border: 1px solid white;
-}
+  .foot-tel {
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 12px;
+      padding: 15px 30px;
+      border: 1px solid #ffffff;
+      margin-right: 0;
+      margin-left: 38px;
+  }
