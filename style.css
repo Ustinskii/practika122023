@@ -1,21 +1,29 @@
   @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
 
   * {
-    margin: 0;
+      margin: 0;
   }
+
+  :root {
+      font-family: Rubik, Courier, monospace;
+      font-weight: 400;
+      --color-white: #ffffff;
+      --color-black: #1e1e1e;
+      --color-green: #27ae60;
+  }
+
   a {
       text-decoration: none;
-      color: black;
+      color: var(--color-black);
   }
 
   h3 {
-      font-family: Rubik;
-      font-size: 42px;
+      font-size: clamp(24px, 1vw + 1rem, 42px);
       font-weight: 500;
-      line-height: 50px;
+      line-height: clamp(28px, 1vw + 1rem, 50px);
       letter-spacing: 0em;
-      text-align: left;
-      color: #1E1E1C;
+      margin-top: 30px;
+      color: var(--color-black);
   }
 
   li {
@@ -50,9 +58,19 @@
       padding: 10px;
   }
 
+  .menu-item a {
+      font-size: 16px;
+      color: var(--color-black);
+  }
+
+  .menu-item a:hover {
+      cursor: pointer;
+      color: var(--color-green);
+      font-size: 17px;
+  }
+
   .banner {
-      width: 775px;
-      height: 382px;
+      width: 35vw;
       margin-top: 320px;
       margin-left: 250px;
       display: flex;
@@ -61,38 +79,34 @@
   }
 
   .banner-title {
-      font-family: Rubik;
-      font-size: 60px;
+      font-size: clamp(32px, 3vw, 60px);
       font-weight: 700;
       line-height: 71px;
       letter-spacing: 0em;
-      text-align: left;
-      color: #ffffff;
+
+      color: var(--color-white);
   }
 
   .banner-text {
-      font-family: Rubik;
       font-size: 20px;
-      font-weight: 400;
       line-height: 28px;
       letter-spacing: 0em;
-      text-align: left;
-      color: #ffffff;
+
+      color: var(--color-white);
   }
 
   .callback {
       width: 254px;
       height: 66px;
       border-radius: 8px;
-      background: #27AE60;
+      background: var(--color-green);
       border: none;
-      font-family: Rubik;
       font-size: 22px;
       font-weight: 500;
       line-height: 26px;
       letter-spacing: 0em;
-      text-align: left;
-      color: #ffffff;
+
+      color: var(--color-white);
       text-align: center;
   }
 
@@ -116,7 +130,7 @@
 
   .why .block {
       border: 1px solid #a8a8a8;
-      background-color: #ffffff;
+      background-color: var(--color-white);
       border-radius: 8px;
       padding: 25px;
       display: flex;
@@ -135,7 +149,7 @@
       font-weight: 500;
       line-height: 20px;
       letter-spacing: 0em;
-      text-align: left;
+
 
   }
 
@@ -149,11 +163,10 @@
       height: 524px;
       border: 1px solid #a8a8a8;
       border-radius: 8px;
-      font-family: Rubik;
       font-size: 40px;
       font-weight: 700;
-      text-align: left;
-      color: #ffffff;
+
+      color: var(--color-white);
       padding: 40px;
       display: flex;
 
@@ -188,12 +201,10 @@
   }
 
   .about-text {
-      font-family: Rubik;
       font-size: 18px;
-      font-weight: 400;
       line-height: 26px;
       letter-spacing: 0.005em;
-      text-align: left;
+
       width: 30vw;
   }
 
@@ -212,7 +223,6 @@
   }
 
   .caunt {
-      font-family: Rubik;
       font-size: 88px;
       font-weight: 300;
       color: #1D1D1B;
@@ -221,19 +231,16 @@
   }
 
   .plus {
-      font-family: Rubik;
       font-size: 40px;
       font-weight: 500;
-      color: #27AE60;
+      color: var(--color-green);
   }
 
   .have-text {
-      font-family: Rubik;
       font-size: 24px;
-      font-weight: 400;
       line-height: 34px;
       letter-spacing: 0.005em;
-      text-align: left;
+
       color: #67675F;
   }
 
@@ -252,24 +259,21 @@
   }
 
   .faq-black {
-      font-family: Rubik;
       font-size: 22px;
       font-weight: 300;
       line-height: 31px;
       letter-spacing: 0em;
-      text-align: left;
-      color: #1E1E1C;
+
+      color: var(--color-black);
       margin-bottom: 53px;
   }
 
   .faq-green {
-      font-family: Rubik;
       font-size: 28px;
-      font-weight: 400;
       line-height: 39px;
       letter-spacing: 0em;
-      text-align: left;
-      color: #27AE60;
+
+      color: var(--color-green);
       margin-top: 23px;
       margin-bottom: 23px;
   }
@@ -277,24 +281,21 @@
   .brod {
       height: 57px;
       width: 318px;
-      background: #27AE60;
+      background: var(--color-green);
       margin: auto;
   }
 
   .faq-form {
       border-radius: 12px;
-      background: #ffffff;
+      background: var(--color-white);
       display: flex;
       flex-direction: column;
       padding: 45px 45px 30px 45px;
-      font-family: Rubik;
       font-size: 18px;
-      font-weight: 400;
       line-height: 18px;
       letter-spacing: 0em;
-      text-align: left;
+
       color: #181A28;
-      /* margin-right: 250px; */
   }
 
   .faq-form input {
@@ -312,12 +313,9 @@
   }
 
   .form-text {
-      font-family: Rubik;
       font-size: 15px;
-      font-weight: 400;
       line-height: 15px;
       letter-spacing: 0em;
-      text-align: left;
       color: #181A28;
       margin-top: 23px;
       margin-bottom: -15px;
@@ -335,11 +333,8 @@
   }
 
   .delivery .block p {
-      font-family: Rubik;
       font-size: 20px;
-      font-weight: 400;
       line-height: 28px;
-      text-align: left;
       width: 30vw;
       margin-top: 30px;
       margin-bottom: 36px;
@@ -350,13 +345,12 @@
   }
 
   .star-text span {
-      font-family: Rubik;
       font-size: 16px;
       font-weight: 300;
       line-height: 22px;
       letter-spacing: 0em;
-      text-align: left;
-      color: #1E1E1C;
+
+      color: var(--color-black);
   }
 
   .dev-contact {
@@ -377,7 +371,6 @@
   }
 
   .dev-text1 {
-      font-family: Rubik;
       font-size: 18px;
       font-weight: 500;
       line-height: 18px;
@@ -386,9 +379,7 @@
   }
 
   .dev-text2 {
-      font-family: Rubik;
       font-size: 16px;
-      font-weight: 400;
       line-height: 16px;
       letter-spacing: 0em;
       text-align: center;
@@ -426,36 +417,111 @@
   .policis {
       font-family: Gilroy;
       font-size: 12px;
-      font-weight: 400;
       line-height: 14px;
-      color: #ffffff;
+      color: var(--color-white);
       margin-left: 50px;
       margin-right: 134px;
   }
 
   .foot-menu {
-      color: #ffffff;
+      color: var(--color-white);
       margin-left: 50px;
       font-family: Gilroy;
       font-size: 18px;
-      font-weight: 400;
       line-height: 22px;
       letter-spacing: 0em;
-      text-align: left;
+
 
   }
-.socials{
-    margin-left: auto;
-    display: flex;
-    gap: 25px;
-}
+
+  .socials {
+      margin-left: auto;
+      display: flex;
+      gap: 25px;
+  }
+
   .foot-tel {
       font-family: Montserrat;
       font-size: 12px;
-      font-weight: 400;
       line-height: 12px;
       padding: 15px 30px;
-      border: 1px solid #ffffff;
+      border: 1px solid var(--color-white);
       margin-right: 0;
       margin-left: 38px;
+  }
+
+  @media (max-width: 380px) {
+      .container {
+          display: flex;
+          flex-direction: column;
+      }
+
+      nav {
+          display: none;
+      }
+
+      main {
+          margin: 10px 0;
+      }
+      .banner {
+        width: 35vw;
+        height: 70vh;
+        margin: auto 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+      .why .block {
+          margin: 0 20px;
+      }
+
+      .material .block {
+          height: 226px;
+          margin: 20px;
+      }
+
+      .about .block {
+          margin: 20px;
+      }
+
+      .about-text {
+          width: 100%;
+      }
+
+      .banner {
+          margin-left: 0;
+      }
+
+      .faq {
+          margin: 0 20px;
+          padding: 0;
+      }
+
+      .faq .left {
+          width: 100%;
+          margin-bottom: 20px;
+      }
+
+      .left .callback {
+          display: none;
+      }
+      .brod{
+        display: none;
+      }
+      .delivery{
+        margin: 0 20px;        
+      }
+
+      .delivery .block p{
+width: 100%;
+      }
+
+      .dev-map {
+          margin-right: 0;
+      }
+
+      footer {
+          padding: 23px 0;
+      }
   }
